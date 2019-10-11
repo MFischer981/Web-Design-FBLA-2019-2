@@ -92,6 +92,8 @@ header .container {
 }
 
 header .container .hero_textbox {
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px;
     display: block;
     background: white;
     padding: 40px 20px;
@@ -409,50 +411,55 @@ article .container a.quick_link {
     display: block;
     margin: 80px auto;
     max-width: 1600px;
-    box-shadow: 0 0 12px rgba(0, 0, 0, 0.2)
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
 }
 
 .places .destination {
     display: block;
     float: left;
-    min-height: 600px;
+    min-height: 400px;
     padding: 80px 20px 80px;
-    width: 20%;
-    transition-duration: .2s;
+    width: 16.6666666667%;
+    transition-duration: .4s;
     overflow: hidden;
 }
 
 .places .destination#arizona {
-    background: linear-gradient(to top, transparent, rgb(21, 39, 68)), url("https://images.unsplash.com/photo-1558472964-be7065dcfab9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.75)), url("https://images.unsplash.com/photo-1558472964-be7065dcfab9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
     background-position: center;
     background-size: cover;
 }
 .places .destination#nevada {
-    background: linear-gradient(to top, transparent, rgb(21, 39, 68)), url("https://images.unsplash.com/photo-1534219066561-ae20285bd59e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1436&q=80");
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.75)), url("https://images.unsplash.com/photo-1501595253185-9e1015b44a40?ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80");
     background-position: center;
     background-size: cover;
 }
 .places .destination#colorado {
-    background: linear-gradient(to top, transparent, rgb(21, 39, 68)), url("https://images.unsplash.com/photo-1508446760803-1afec7c2b6fe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80");
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.75)), url("https://images.unsplash.com/photo-1508446760803-1afec7c2b6fe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80");
     background-position: center;
     background-size: cover;
 }
 .places .destination#newmex {
-    background: linear-gradient(to top, transparent, rgb(21, 39, 68)), url("https://images.unsplash.com/photo-1562705859-72842cf88fd1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1491&q=80");
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.75)), url("https://images.unsplash.com/photo-1562705859-72842cf88fd1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1491&q=80");
     background-position: center;
     background-size: cover;
 }
 .places .destination#cali {
-    background: linear-gradient(to top, transparent, rgb(21, 39, 68)), url("https://images.unsplash.com/photo-1501594907352-04cda38ebc29?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80");
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.75)), url("https://images.unsplash.com/photo-1501594907352-04cda38ebc29?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80");
+    background-position: center;
+    background-size: cover;
+}
+.places .destination#utah {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.75)), url("https://images.unsplash.com/photo-1504282706065-f5866e9cbeeb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2089&q=80");
     background-position: center;
     background-size: cover;
 }
 .places:hover .destination {
-    width: 10%;
+    width: 12%;
 }
 
 .places .destination:hover {
-    width: 60%;
+    width: 40%;
 }
 
 .places .destination h1 {
@@ -474,9 +481,9 @@ article .container a.quick_link {
 .places .destination a {
     display: block;
     font-family: acumin-pro, sans-serif;
-    font-weight: 700;
+    font-weight: 400;
     font-style: normal;
-    font-size: 28px;
+    font-size: 24px;
     color: white;
     margin: 0;
     position: relative;
@@ -484,23 +491,10 @@ article .container a.quick_link {
     white-space: nowrap;
     opacity: 0;
     text-decoration: none;
-    transition: .4s;
+    transition: .6s;
     border-top: 1px white solid;
     padding: 10px 0;
 }
-
-.places .destination a small {
-    display: block;
-    font-family: acumin-pro, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 20px;
-    line-height: 1em;
-    color: white;
-    text-transform: uppercase;
-    margin: 0;
-}
-
 
 .places .destination:hover a {
     opacity: 1;
@@ -533,5 +527,9 @@ article .container a.quick_link {
     
     .vacations .container {
         grid-template-columns: 1fr;
+    }
+
+    .places .destination a {
+        opacity: 1;
     }
 }
